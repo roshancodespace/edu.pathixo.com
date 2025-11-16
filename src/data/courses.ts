@@ -7,8 +7,7 @@ export const courses = [
         price: 3999,
         originalPrice: 9999,
         image:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuB3lR5pCcIbvCDXXHBNDDhi0gHaDgKBLa1QHZRc-45A0dmXgrliHSgXDtQWu_txAd6IgbrkMMOk1J_NencpxiJjgUHKeRgVkq7lcvH8e9hf1P7MT4b-1005jMpLJ-8JBovhT-skw4dIgb-4cTIuamywOEIyCCIcwZna568Yq4gOT5imwrQpx_N82a8qQ-8e9Ic_QOCj3XzHETWFoYriKJQacUGpG4xRRnmcy95RCOVn36io_fKRtsrZ5TQf7y585kKyD9NbNk9wYhw",
-
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuATvwPKrblGGY243q9OLxE6otBlaPbjnBFSLH3nHo_CwpZXYXs9nw-BuWiVhbhpftaBAqzhICCgq-NZr4eOAHJ6UpjSuH6i_cxEtooh5LzkJQZ_KGWrH7oKw9OQ-a_pCOJUQTlRin2jE5HtwBsXaWwDpvlAWWmqoyE0BdWmqI3Lyjf57v8Dr2L785cksbDjCpDiJxrKnvR5kjUiUxcK_NcTiznqS3o-CH8KQIo18p5MizxR7dBqDl5L2jAumj1di-3GIl5sRzFpGEE",
         longDescription:
             "This masterclass is your complete guide to becoming a proficient full-stack developer. You'll start with modern front-end development using React, exploring component architecture, hooks, and state management. Then you'll move to the back-end with Node.js and Express to build secure REST APIs, work with databases, authentication systems, and deploy full applications. The course includes several real-world projects and a final capstone project you can showcase in your portfolio.",
 
@@ -144,5 +143,126 @@ export const courses = [
             }
         ]
 
+    },
+    {
+        title: "Python to Machine Learning Bootcamp",
+        description:
+            "A 13-week hands-on bootcamp that takes you from zero programming experience to building real machine learning models using Python, NumPy, Pandas, Matplotlib, Seaborn, and Scikit-Learn.",
+        duration: "13 Weeks",
+        price: 4499,
+        originalPrice: 8999,
+        image:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuCBlm8blct2fESZoMkwfwrA_Wbu2Zu26QTwEXoox_INiKBWHNlf8W1JrEkyAc5PTxczosyn2iju30Vv-gneFedlemm5xopX8lV6cpgS6HtnrPVAq2WEdHFRrkla06UDbi4-jmnyfvkLdelSE_MSsBG4S7Ba9kTO07a8TJ8WNvovPcD2Cp-hJO_gI6DN-aaIN0Xt0NleX9zf9DvubfmmDZK4dnT64ilKio3-B49uVL6sUj1GNlpYTas3p4s3RDGXXDtRsd888OD8vDc",
+
+        longDescription:
+            "This intensive bootcamp is designed for absolute beginners who want to enter the world of data science and machine learning. You'll start with Python fundamentals, then master the essential data science ecosystem, and finally build, train, and evaluate real machine learning models. The entire course is project-based with weekly assignments, mini projects, and a final ML capstone project that showcases your skills.",
+
+        whatYouWillLearn: [
+            "Write clean and efficient Python programs from scratch.",
+            "Master NumPy, Pandas, Matplotlib, and Seaborn for data analysis.",
+            "Perform Exploratory Data Analysis (EDA) on real datasets.",
+            "Build, train, and evaluate machine learning models using Scikit-Learn.",
+            "Understand regression, classification, clustering, and preprocessing techniques.",
+            "Create end-to-end ML workflows and pipelines.",
+            "Work with Jupyter/Colab for research-grade coding.",
+            "Complete a real-world ML capstone project for your portfolio."
+        ],
+
+        prerequisites: [
+            "No prior coding experience required.",
+            "A laptop with internet connection.",
+            "Willingness to practice 3–5 hours per week."
+        ],
+
+        stats: {
+            students: 4280,
+            lastUpdated: "Jan 2025",
+        },
+
+        includes: [
+            "Live weekend classes (Sat & Sun)",
+            "Hands-on coding in every class",
+            "Weekly assignments and mini-projects",
+            "Capstone project with presentation",
+            "Lifetime access to materials",
+            "Certificate of Completion"
+        ],
+
+        curriculum: [
+            // ---------------- Module 1 ----------------
+            {
+                module: "Module 1: Python Foundations",
+                weeks: "Weeks 1–3",
+                lessons: [
+                    "Lecture 1: Python Basics, Environment Setup, Variables & Data Types",
+                    "Lecture 2: Lists, Tuples, Dictionaries, Sets",
+                    "Lecture 3: Control Flow — if/elif/else, loops, break/continue",
+                    "Lecture 4: Functions, Scope & Lambda Functions",
+                    "Lecture 5: List Comprehensions & File I/O",
+                    "Lecture 6: Introduction to NumPy & Array Operations"
+                ]
+            },
+
+            // ---------------- Module 2 ----------------
+            {
+                module: "Module 2: The Data Science Stack",
+                weeks: "Weeks 4–6",
+                lessons: [
+                    "Lecture 7: NumPy Indexing, Slicing, Vectorized Operations, Broadcasting",
+                    "Lecture 8: Pandas Series & DataFrames, Reading CSV/Excel",
+                    "Lecture 9: Data Cleaning, Selection, Missing Values",
+                    "Lecture 10: Groupby, Aggregations, Merge, Join, Concat",
+                    "Lecture 11: Matplotlib — Line, Bar, Scatter, Histogram, Subplots",
+                    "Lecture 12: Seaborn — Distplots, Pairplots, Boxplots, Heatmaps"
+                ]
+            },
+
+            // ---------------- Module 3 ----------------
+            {
+                module: "Module 3: Machine Learning Foundations",
+                weeks: "Weeks 7–8",
+                lessons: [
+                    "Lecture 13: What is ML? Supervised vs Unsupervised, ML Workflow",
+                    "Lecture 14: Data Preprocessing — Scaling, Encoding, Pipelines",
+                    "Lecture 15: Linear Regression — Concepts & Implementation",
+                    "Lecture 16: Regression Evaluation — MAE, MSE, RMSE, R²"
+                ]
+            },
+
+            // ---------------- Module 4 ----------------
+            {
+                module: "Module 4: Supervised Learning — Classification",
+                weeks: "Weeks 9–10",
+                lessons: [
+                    "Lecture 17: Logistic Regression — Theory & Scikit-Learn",
+                    "Lecture 18: Classification Metrics — Precision, Recall, F1, ROC-AUC",
+                    "Lecture 19: K-Nearest Neighbors (KNN) — Theory & Lab",
+                    "Lecture 20: Decision Trees, Random Forests & Ensemble Concepts"
+                ]
+            },
+
+            // ---------------- Module 5 ----------------
+            {
+                module: "Module 5: Unsupervised Learning & Model Tuning",
+                weeks: "Weeks 11–12",
+                lessons: [
+                    "Lecture 21: K-Means Clustering & Elbow Method",
+                    "Lecture 22: PCA — Dimensionality Reduction & Visualization",
+                    "Lecture 23: Hyperparameter Tuning — GridSearchCV, RandomizedSearchCV",
+                    "Lecture 24: Capstone Project Kickoff & Dataset Selection"
+                ]
+            },
+
+            // ---------------- Module 6 ----------------
+            {
+                module: "Module 6: Capstone Project",
+                weeks: "Week 13",
+                lessons: [
+                    "Lecture 25: Capstone Workshop — Debugging, EDA, Model Refinement",
+                    "Lecture 26: Final Presentations — Results, Evaluation, Next Steps"
+                ]
+            }
+        ]
     }
 ];
+

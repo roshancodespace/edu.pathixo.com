@@ -29,7 +29,7 @@ export default function Home() {
           <Link
             key={course.title}
             href={`/${course.title.toLowerCase().replace(/\s+/g, "-")}`}
-            className="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-pink-500/40 transition-all hover:shadow-xl hover:shadow-pink-500/5"
+            className="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-pink-500/40 transition-all hover:shadow-xl hover:shadow-pink-500/5 flex flex-col"
           >
             <div className="relative">
               <div
@@ -47,13 +47,15 @@ export default function Home() {
               )}
             </div>
 
-            <div className="p-6 flex flex-col">
+            {/* content wrapper must flex-grow */}
+            <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl font-bold text-zinc-100">{course.title}</h3>
 
               <p className="text-zinc-400 text-sm mt-2 mb-6 line-clamp-3">
                 {course.description}
               </p>
 
+              {/* bottom stays pinned */}
               <div className="flex justify-between items-center mt-auto">
                 <div className="flex items-baseline gap-2">
                   <span className="text-zinc-100 text-2xl font-bold">₹{course.price}</span>
