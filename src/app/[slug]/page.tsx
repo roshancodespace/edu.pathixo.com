@@ -1,39 +1,23 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { ListIcon, CheckCircle, TextIcon, ListTreeIcon } from "lucide-react";
-import { courses } from "@/data/courses";
-import { useParams } from "next/navigation";
+import { useState } from "react"; import { motion, AnimatePresence } from "motion/react"; import { ListIcon, CheckCircle, TextIcon, ListTreeIcon } from "lucide-react"; import { courses } from "@/data/courses"; import { useParams } from "next/navigation";
 
 const notFound = () => <div>Course Not Found</div>;
 
-const renderWithBold = (text: string) => {
-    const parts = text.split("**");
-    return (
-        <span>
-            {parts.map((part, index) =>
-                index % 2 === 1 ? (
-                    <strong key={index} className="font-medium text-pink-400">
-                        {part}
-                    </strong>
-                ) : (
-                    part
-                )
-            )}
-        </span>
-    );
-};
+const renderWithBold = (text: string) => { const parts = text.split("**"); return (<span> {parts.map((part, index) => index % 2 === 1 ? (<strong key={index} className="font-medium text-pink-400"> {part} </strong>) : (part))} </span>); };
 
 export default function CourseDetails() {
-    const params = useParams();
-    const [activeTab, setActiveTab] = useState("description");
+    const params = useParams(); const [activeTab, setActiveTab] = useState("description");
 
     const course = courses.find(
         (c) => c.title.toLowerCase().replace(/\s+/g, "-") === params.slug
     );
 
     if (!course) return notFound();
+
+    const whatsappMessage = `Hello, I am interested in enrolling in the "${course.title}" course.`;
+    const encodedWhatsappMessage = encodeURIComponent(whatsappMessage);
+    const whatsappLink = `https://wa.me/+918877020121?text=${encodedWhatsappMessage}`;
 
     const tabs = [
         { id: "description", name: "Description", icon: TextIcon },
@@ -74,7 +58,7 @@ export default function CourseDetails() {
                     </div>
 
                     <a
-                        href="https://wa.me/+918877020121"
+                        href={whatsappLink}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="w-full block bg-linear-to-r from-pink-500 to-violet-600 text-white font-semibold py-3 rounded-lg mt-4 text-lg text-center"
@@ -312,7 +296,7 @@ export default function CourseDetails() {
                             </div>
 
                             <a
-                                href="https://wa.me/+918877020121"
+                                href={whatsappLink}
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="w-full block bg-linear-to-r from-pink-500 to-violet-500 font-semibold text-center px-4 py-3 rounded-md"
