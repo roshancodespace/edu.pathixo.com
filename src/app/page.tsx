@@ -1,63 +1,82 @@
+import Footer from "@/components/Footer";
 import { courses } from "@/data/courses";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="text-center mt-10">
-      <h1 className="text-7xl font-bold">Unlock Your Potential</h1>
-      <p className="text-zinc-500 text-lg">
-        Explore our expert-led courses and take the next step in your creative and <br />
-        technical journey.
-      </p>
+    <>
+      <section className="max-w-7xl mx-auto pt-20 pb-10 px-6 text-center">
+        <h1 className="text-6xl md:text-7xl font-extrabold text-white">
+          Unlock Your Potential
+        </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 px-6 max-w-7xl mx-auto">
+        <p className="text-zinc-400 text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+          Master industry-ready skills with hands-on learning, expert mentorship, and real-world projects.
+        </p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-12 max-w-5xl mx-auto text-sm">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Live Mentorship</div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Hands-On Projects</div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Dedicated Support</div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Industry-Ready Skills</div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Lifetime Access</div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl py-3 text-zinc-300">Certificates</div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto mt-16 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
         {courses.map((course) => (
-          <div
+          <Link
             key={course.title}
-            className="group flex flex-col bg-zinc-900/50 rounded-xl overflow-hidden border border-zinc-800 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 relative"
+            href={`/${course.title.toLowerCase().replace(/\s+/g, "-")}`}
+            className="group bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-pink-500/40 transition-all hover:shadow-xl hover:shadow-pink-500/5"
           >
-            <div className="absolute inset-0 bg-linear-to-r from-pink-500/3 to-violet-500/3 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-            {/* Image */}
             <div className="relative">
               <div
-                className="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                className="aspect-video bg-cover bg-center"
                 style={{ backgroundImage: `url('${course.image}')` }}
               />
-              <div className="absolute top-4 right-4 bg-pink-500/20 text-pink-400 text-xs font-semibold px-2.5 py-1 rounded-full">
+              <div className="absolute top-4 right-4 bg-zinc-900/80 backdrop-blur-sm text-pink-400 text-xs font-semibold px-3 py-1 rounded-full">
                 {course.duration}
               </div>
+
+              {course.originalPrice && (
+                <div className="absolute top-4 left-4 bg-pink-600 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+                  {Math.round(((course.originalPrice - course.price) / course.originalPrice) * 100)}% OFF
+                </div>
+              )}
             </div>
 
-            {/* Content */}
-            <div className="p-6 flex flex-col grow z-10">
-              <h3 className="text-zinc-100 text-xl font-bold mb-2">
-                {course.title}
-              </h3>
+            <div className="p-6 flex flex-col">
+              <h3 className="text-xl font-bold text-zinc-100">{course.title}</h3>
 
-              <p className="text-zinc-400 text-sm mb-6 grow">
+              <p className="text-zinc-400 text-sm mt-2 mb-6 line-clamp-3">
                 {course.description}
               </p>
 
               <div className="flex justify-between items-center mt-auto">
-                <p className="text-zinc-100 text-2xl font-bold">${course.price}</p>
-                <Link
-                  className="px-5 py-2.5 text-sm font-semibold text-white bg-linear-to-r from-pink-600 to-violet-600 rounded-lg hover:from-pink-500 hover:to-violet-500 transition-all"
-                  href={`/${course.title.toLowerCase().replace(/\s+/g, "-")}`}
-                >
-                  Purchase Course
-                </Link>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-zinc-100 text-2xl font-bold">₹{course.price}</span>
+                  {course.originalPrice && (
+                    <span className="text-zinc-500 line-through text-sm">₹{course.originalPrice}</span>
+                  )}
+                </div>
+
+                <div className="px-4 py-2 text-sm font-semibold text-white bg-linear-to-r from-pink-600 to-violet-600 rounded-lg group-hover:opacity-90">
+                  Learn More
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
-      </div>
-    </div>
+      </section>
+
+      <Footer />
+    </>
   );
 }
 
 export const metadata = {
   title: "edu.pathixo",
-  description:
-    "Explore our expert-led courses and take the next step in your creative and technical journey.",
+  description: "Modern, expert-led courses built for real-world skills and career growth."
 };

@@ -4,7 +4,8 @@ export const courses = [
         description:
             "Learn to build dynamic and responsive web applications using modern technologies like React, Node.js, and MongoDB.",
         duration: "6 months",
-        price: 299,
+        price: 3999,
+        originalPrice: 9999,
         image:
             "https://lh3.googleusercontent.com/aida-public/AB6AXuB3lR5pCcIbvCDXXHBNDDhi0gHaDgKBLa1QHZRc-45A0dmXgrliHSgXDtQWu_txAd6IgbrkMMOk1J_NencpxiJjgUHKeRgVkq7lcvH8e9hf1P7MT4b-1005jMpLJ-8JBovhT-skw4dIgb-4cTIuamywOEIyCCIcwZna568Yq4gOT5imwrQpx_N82a8qQ-8e9Ic_QOCj3XzHETWFoYriKJQacUGpG4xRRnmcy95RCOVn36io_fKRtsrZ5TQf7y585kKyD9NbNk9wYhw",
 
@@ -27,7 +28,6 @@ export const courses = [
         ],
 
         stats: {
-            rating: 4.9,
             students: 12345,
             lastUpdated: "Oct 2023",
         },
