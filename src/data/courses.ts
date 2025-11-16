@@ -16,8 +16,8 @@ export const courses = [
             "Build modern, scalable full-stack web applications.",
             "Master React, Node.js, Express, and MongoDB.",
             "Implement secure authentication and authorization.",
-            "Deploy applications to cloud platforms such as Vercel and Render (Free Tier).", 
-            "Understand and design **RESTful APIs**.", 
+            "Deploy applications to cloud platforms such as Vercel and Render (Free Tier).",
+            "Understand and design **RESTful APIs**.",
             "Write clean, maintainable, and testable code.",
         ],
 
@@ -38,104 +38,111 @@ export const courses = [
             "Full lifetime access",
             "Certificate of completion"
         ],
-
         curriculum: [
             {
-                module: "Module 1: Essential Foundations & Modern JavaScript",
-                weeks: "Week 1-3 (6 x 90-min Classes)",
+                module: "Module 1: JavaScript Foundations & Modern Tooling",
+                weeks: "Week 1–3 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Environment Setup, CLI, and Git Essentials",
-                    "Class 2: Modern JavaScript: Core Syntax and Functions",
-                    "Class 3: Mastering Asynchronous JS (Promises, Async/Await)",
-                    "Class 4: Array Methods and Destructuring (Map, Filter, Reduce)",
-                    "Class 5: ES Modules and Imports/Exports",
-                    "Class 6: Structuring a Clean Project and Git Workflow Review"
-                ],
+                    "Class 1: Dev Environment Setup, VS Code, Git & GitHub",
+                    "Class 2: Modern JavaScript Essentials (let/const, functions, scope)",
+                    "Class 3: Async JavaScript (Promises, Async/Await, Fetch API)",
+                    "Class 4: Array & Object Power Features (Map, Filter, Reduce, Destructuring)",
+                    "Class 5: ES Modules, Imports/Exports & Clean Folder Structures",
+                    "Class 6: Building Your First Mini JS Project with Proper Git Workflow"
+                ]
             },
+
             {
-                module: "Module 2: React Core & Component Architecture",
-                weeks: "Week 4-6 (6 x 90-min Classes)",
+                module: "Module 2: React Essentials Through Next.js",
+                weeks: "Week 4–6 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: JSX, Functional Components, and Props",
-                    "Class 2: Introduction to State with `useState`",
-                    "Class 3: Managing Side Effects with `useEffect`",
-                    "Class 4: Conditional Rendering and List Mapping",
-                    "Class 5: Handling Forms and Controlled Inputs",
-                    "Class 6: Setting up Client-Side Routing (**React Router v6**)"
-                ],
+                    "Class 1: React Basics Inside Next.js (Components, Props, JSX)",
+                    "Class 2: State & Events with useState",
+                    "Class 3: Side Effects & Data Fetching with useEffect",
+                    "Class 4: Lists, Conditional Rendering & Component Patterns",
+                    "Class 5: Forms & Controlled Inputs in React",
+                    "Class 6: Layouts, Pages, SEO Basics & File-System Routing in Next.js"
+                ]
             },
+
             {
-                module: "Module 3: Advanced React State Management (Redux Toolkit)",
-                weeks: "Week 7-9 (6 x 90-min Classes)",
+                module: "Module 3: Next.js Advanced Features & State Management",
+                weeks: "Week 7–9 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Global State: Why We Need Redux",
-                    "Class 2: Installing and Setting up **Redux Toolkit**",
-                    "Class 3: Defining State Slices and Reducers",
-                    "Class 4: Dispatching Actions and State Updates",
-                    "Class 5: Asynchronous Fetching with **RTK Query** (Intro)",
-                    "Class 6: Integrating RTK Query for Data Management"
-                ],
+                    "Class 1: Server Components vs Client Components — When & Why",
+                    "Class 2: Next.js App Router Deep Dive",
+                    "Class 3: Building API Routes Inside Next.js",
+                    "Class 4: Local & Global State: When Redux is Needed",
+                    "Class 5: Redux Toolkit Setup & RTK Query for Fetching",
+                    "Class 6: Data Caching, Revalidation & Data Layer Patterns"
+                ]
             },
+
             {
-                module: "Module 4: Node.js, Express, and RESTful API Design",
-                weeks: "Week 10-12 (6 x 90-min Classes)",
+                module: "Module 4: Backend with Node.js, Express & REST APIs",
+                weeks: "Week 10–12 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Node.js Basics (Event Loop, Modules)",
-                    "Class 2: Express Installation and Routing Setup",
-                    "Class 3: Using Middleware (Body Parser, CORS)",
-                    "Class 4: Designing and Implementing CRUD Endpoints",
-                    "Class 5: Building Route Controllers and Centralized Error Handling",
-                    "Class 6: Simple Postman/Insomnia Demo for API Testing"
-                ],
+                    "Class 1: Node.js Fundamentals (Event Loop, NPM, Modules)",
+                    "Class 2: Express Setup & Route Handling",
+                    "Class 3: Middleware, CORS, Body Parsing & API Structure",
+                    "Class 4: Designing RESTful CRUD Endpoints",
+                    "Class 5: Controllers, Models & Error Handling",
+                    "Class 6: API Testing with Thunder Client/Postman"
+                ]
             },
+
             {
-                module: "Module 5: MongoDB and Mongoose Data Modeling",
-                weeks: "Week 13-15 (6 x 90-min Classes)",
+                module: "Module 5: MongoDB, Mongoose & Database Architecture",
+                weeks: "Week 13–15 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Intro to NoSQL and **MongoDB Atlas** (Free Tier)",
-                    "Class 2: Connecting MongoDB to the Express App",
-                    "Class 3: Defining **Mongoose** Schemas and Models",
-                    "Class 4: Implementing Database CRUD Operations",
-                    "Class 5: Data Validation and Basic Querying",
-                    "Class 6: Integrating Mongoose Functions into Controllers"
-                ],
+                    "Class 1: MongoDB Atlas Setup (Free Tier)",
+                    "Class 2: Connecting MongoDB to Express",
+                    "Class 3: Mongoose Models & Schema Definitions",
+                    "Class 4: CRUD Operations & Query Patterns",
+                    "Class 5: Data Validation, Aggregations & Relationships",
+                    "Class 6: Integrating MongoDB with Next.js API Routes"
+                ]
             },
+
             {
-                module: "Module 6: Authentication and Security (JWT)",
-                weeks: "Week 16-18 (6 x 90-min Classes)",
+                module: "Module 6: Authentication, Authorization & Security",
+                weeks: "Week 16–18 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Hashing Passwords with **Bcrypt** (Registration)",
-                    "Class 2: Implementing User Registration Endpoint",
-                    "Class 3: Generating **JWT Tokens** upon Successful Login",
-                    "Class 4: Storing and Sending the JWT to the Frontend",
-                    "Class 5: Protecting Routes with Authentication Middleware",
-                    "Class 6: Basic Authorization: Role-Based Access Control (RBAC)"
-                ],
+                    "Class 1: Password Hashing with Bcrypt",
+                    "Class 2: Register & Login API Implementation",
+                    "Class 3: Generating & Verifying JWT Tokens",
+                    "Class 4: Protecting API Routes (Middleware + Auth Guards)",
+                    "Class 5: Role-Based Access Control (RBAC)",
+                    "Class 6: NextAuth.js for Full Next.js Authentication Flow"
+                ]
             },
+
             {
-                module: "Module 7: Professional Testing & Deployment (Free Tier)",
-                weeks: "Week 19-21 (6 x 90-min Classes)",
+                module: "Module 7: Testing, Optimization & Deployment",
+                weeks: "Week 19–21 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Intro to Testing: Unit vs. Integration",
-                    "Class 2: Unit Testing Backend Logic with **Jest**",
-                    "Class 3: Component Testing with **React Testing Library**",
-                    "Class 4: Setting up Production Environment Variables",
-                    "Class 5: Deploying Backend API to **Render** (Free Tier)",
-                    "Class 6: Deploying Frontend to **Vercel/Netlify** (Free Tier)"
-                ],
+                    "Class 1: Unit vs Integration Testing Basics",
+                    "Class 2: Backend Testing with Jest",
+                    "Class 3: UI Testing with React Testing Library",
+                    "Class 4: Environment Variables, Build Optimization & Performance",
+                    "Class 5: Deploying Backend to Render (Free Tier)",
+                    "Class 6: Deploying Next.js App to Vercel (Free Tier)"
+                ]
             },
+
             {
-                module: "Module 8: The Capstone Project (Portfolio Ready)",
-                weeks: "Week 22-24 (6 x 90-min Classes)",
+                module: "Module 8: Final Capstone (Full-Stack Next.js App)",
+                weeks: "Week 22–24 (6 x 90-min Classes)",
                 lessons: [
-                    "Class 1: Final Project Planning and Feature Scoping",
-                    "Class 2: Setting up the Capstone Full-Stack Architecture",
-                    "Class 3: Implementing Core CRUD Functionality",
-                    "Class 4: Adding Advanced Feature I (e.g., Search/Filtering)",
-                    "Class 5: Code Refactoring and Final Bug Fixes",
-                    "Class 6: Portfolio Preparation, Documentation, and Interview Guidance"
-                ],
+                    "Class 1: Planning the Capstone & Structuring Requirements",
+                    "Class 2: Setting Up Full-Stack Architecture with Next.js + Node/MongoDB",
+                    "Class 3: Implementing Core CRUD Features",
+                    "Class 4: Adding Advanced Feature (Search, Filters, Pagination, Charts)",
+                    "Class 5: Final Debugging, Performance Tweaks & UI Polish",
+                    "Class 6: Portfolio Build, Deployment & Job-Prep Guidance"
+                ]
             }
-        ],
+        ]
+
     }
 ];
