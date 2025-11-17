@@ -39,11 +39,11 @@ export default function CourseDetails() {
                     <p className="text-zinc-400 mt-3 text-base">{course.description}</p>
 
                     <div className="mt-4 flex items-baseline gap-3">
-                        <p className="text-3xl font-bold text-white">₹{course.price}</p>
+                        <p className="text-3xl font-bold text-white">₹{course.price.toLocaleString()}</p>
                         {course.originalPrice && (
                             <>
                                 <p className="text-zinc-500 line-through text-lg">
-                                    ₹{course.originalPrice}
+                                    ₹{course.originalPrice.toLocaleString()}
                                 </p>
                                 <span className="text-pink-500 text-sm font-medium">
                                     {Math.round(
@@ -276,12 +276,12 @@ export default function CourseDetails() {
                         <div className="p-5 space-y-4">
                             <div className="flex items-baseline gap-2">
                                 <p className="text-2xl font-bold text-zinc-100">
-                                    ₹{course.price}
+                                    ₹{course.price.toLocaleString()}
                                 </p>
                                 {course.originalPrice && (
                                     <>
                                         <p className="text-zinc-500 line-through">
-                                            ₹{course.originalPrice}
+                                            ₹{course.originalPrice.toLocaleString()}
                                         </p>
                                         <span className="text-pink-500 text-sm font-medium">
                                             {Math.round(

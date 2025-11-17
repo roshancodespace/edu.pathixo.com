@@ -58,9 +58,9 @@ export default function Home() {
               {/* bottom stays pinned */}
               <div className="flex justify-between items-center mt-auto">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-zinc-100 text-2xl font-bold">₹{course.price}</span>
+                  <span className="text-zinc-100 text-2xl font-bold">₹{course.price.toLocaleString()}</span>
                   {course.originalPrice && (
-                    <span className="text-zinc-500 line-through text-sm">₹{course.originalPrice}</span>
+                    <span className="text-zinc-500 line-through text-sm">₹{course.originalPrice.toLocaleString()}</span>
                   )}
                 </div>
 

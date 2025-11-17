@@ -1,4 +1,5 @@
 export const courses = [
+    // ---------------- Full-Stack Web Development ----------------
     {
         title: "Full-Stack Web Development",
         description:
@@ -144,6 +145,7 @@ export const courses = [
         ]
 
     },
+    // ---------------- Python to Machine Learning Bootcamp ----------------
     {
         title: "Python to Machine Learning Bootcamp",
         description:
@@ -189,7 +191,6 @@ export const courses = [
         ],
 
         curriculum: [
-            // ---------------- Module 1 ----------------
             {
                 module: "Module 1: Python Foundations",
                 weeks: "Weeks 1–3",
@@ -202,8 +203,6 @@ export const courses = [
                     "Lecture 6: Introduction to NumPy & Array Operations"
                 ]
             },
-
-            // ---------------- Module 2 ----------------
             {
                 module: "Module 2: The Data Science Stack",
                 weeks: "Weeks 4–6",
@@ -216,8 +215,6 @@ export const courses = [
                     "Lecture 12: Seaborn — Distplots, Pairplots, Boxplots, Heatmaps"
                 ]
             },
-
-            // ---------------- Module 3 ----------------
             {
                 module: "Module 3: Machine Learning Foundations",
                 weeks: "Weeks 7–8",
@@ -228,8 +225,6 @@ export const courses = [
                     "Lecture 16: Regression Evaluation — MAE, MSE, RMSE, R²"
                 ]
             },
-
-            // ---------------- Module 4 ----------------
             {
                 module: "Module 4: Supervised Learning — Classification",
                 weeks: "Weeks 9–10",
@@ -240,8 +235,6 @@ export const courses = [
                     "Lecture 20: Decision Trees, Random Forests & Ensemble Concepts"
                 ]
             },
-
-            // ---------------- Module 5 ----------------
             {
                 module: "Module 5: Unsupervised Learning & Model Tuning",
                 weeks: "Weeks 11–12",
@@ -252,8 +245,6 @@ export const courses = [
                     "Lecture 24: Capstone Project Kickoff & Dataset Selection"
                 ]
             },
-
-            // ---------------- Module 6 ----------------
             {
                 module: "Module 6: Capstone Project",
                 weeks: "Week 13",
@@ -263,6 +254,131 @@ export const courses = [
                 ]
             }
         ]
+    },
+    // ---------------- GATE CSE 2026 Mastery Bootcamp ----------------
+    {
+        title: "GATE CSE 2026 Mastery Bootcamp",
+        description:
+            "A 6-month (24-week) intensive bootcamp to comprehensively prepare students for the GATE CSE examination, covering the complete syllabus.",
+        duration: "6 Months (24 Weeks)",
+        price: 14999,
+        originalPrice: 29999,
+        image:
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuBlvV-BmHw8-m3fYr98PaeMCjyMIHbgQo0oX-NMqYOqN9oGnQ93oxPE1zFYSWu53vhOqrD2mhCyL9a1eDor4L9maDbl6U2qlZl_C3nFfdT_VaVJLeHUv4sdVvsfDpxACP3NzvJ0CuJsPBQ4mT6Tpy7tTbmQLgX97ksYg6X5OB8v1bEeBbzrgqnsuAZO5AgGy0u1-6lF7sgemk_De3dCbfwq3y_3lFWbBBJXu77ExntJ-AL0s6WEbklqhBIbbjW5j26HqLxyxhcsS_I",
+        longDescription:
+            "This 6-month intensive program is designed to comprehensively prepare students for the GATE Computer Science Engineering (CSE) examination. Starting from Operating Systems, the course systematically covers every subject in the GATE syllabus — focusing on concept clarity, numerical problem-solving, and real GATE question practice.\n\nThe curriculum follows a step-by-step approach combining theory sessions, topic-wise quizzes, problem-solving practice, and mock tests, ensuring both depth of understanding and exam readiness.\n\n**Core Philosophy:**\n• Concept Before Formula: Understand 'why' before 'how.'\n• Learn by Practice: Every lecture involves numerical examples and GATE PYQs.\n• Integrated Learning: Topics from OS, DBMS, and CN are taught in correlation.\n• Exam Simulation: Frequent mini-tests and full-length mocks mirror GATE difficulty.",
+
+        whatYouWillLearn: [
+            "Complete 100% of the GATE CSE syllabus with conceptual mastery.",
+            "Solve 3000+ questions, including all GATE PYQs (2010–2025).",
+            "Master numerical problem-solving and real GATE question practice.",
+            "Gain expertise in OS, COA, DSA, DBMS, CN, TOC, and Compiler Design.",
+            "Develop smart exam strategies for accuracy, speed, and revision.",
+            "Earn the Pathixo GATE CSE Mastery Certificate.",
+        ],
+
+        prerequisites: [
+            "Basic understanding of core Computer Science subjects is recommended.",
+            "Familiarity with at least one programming language (C, C++, Python, or Java).",
+        ],
+
+        stats: {
+            students: 250,
+            lastUpdated: "Nov 2025",
+        },
+
+        includes: [
+            "Live weekend lectures (Sat & Sun)",
+            "Concept-based & problem-solving sessions",
+            "Topic-wise quizzes and assignments",
+            "Multiple mock tests & full-length simulations",
+            "NPTEL & Pathixo Study Notes",
+            "GATE PYQ practice sessions",
+            "Certificate of Completion",
+        ],
+        curriculum: [
+            {
+                module: "Module 1: Operating Systems",
+                weeks: "Weeks 1–4",
+                lessons: [
+                    "Week 1 (Lec 1): Introduction to OS, Functions, Structure, Types",
+                    "Week 1 (Lec 2): Processes, States, Scheduling Algorithms (FCFS, SJF, RR, Priority)",
+                    "Week 2: Threads, Multithreading, Race Conditions & Synchronization (Semaphores, Monitors)",
+                    "Week 2: Classical Problems (Producer–Consumer) & GATE PYQ Practice",
+                    "Week 3: Deadlocks (Detection, Prevention, Avoidance, Banker’s Algorithm)",
+                    "Week 3: Memory Management (Paging, Segmentation, Fragmentation)",
+                    "Week 4: Virtual Memory (Page Replacement, LRU, Optimal, FIFO), Thrashing",
+                    "Week 4: File Organization, Disk Scheduling & OS Mock Test #1",
+                ]
+            },
+            {
+                module: "Module 2: Computer Organization & Architecture",
+                weeks: "Weeks 5–8",
+                lessons: [
+                    "Week 5: Number Systems, Boolean Algebra, Digital Logic Design",
+                    "Week 6: CPU Architecture, Addressing Modes, Instruction Set, Control Unit",
+                    "Week 7: Pipelining, Memory Hierarchy, Cache Mapping, I/O Organization",
+                    "Week 8: COA PYQ Session + Mock Test #2",
+                ]
+            },
+            {
+                module: "Module 3: Data Structures & Algorithms",
+                weeks: "Weeks 9–12",
+                lessons: [
+                    "Week 9: Arrays, Linked Lists, Stacks, Queues, Trees (Traversal, BST)",
+                    "Week 10: Graphs – DFS, BFS, MST, Shortest Path (Dijkstra, Kruskal)",
+                    "Week 11: Sorting (Merge, Quick, Heap), Searching, Hashing",
+                    "Week 12: Time Complexity, Recurrence Relations, Divide & Conquer, DP",
+                    "Mock Test #3: DSA + Algorithm Combined",
+                ]
+            },
+            {
+                module: "Module 4: Database Management Systems",
+                weeks: "Weeks 13–15",
+                lessons: [
+                    "Week 13: ER Model, Relational Algebra, Normalization",
+                    "Week 14: SQL Queries, Joins, Transactions (ACID), Concurrency Control",
+                    "Week 15: Recovery, Indexing, File Structures + DBMS Mock Test #4",
+                ]
+            },
+            {
+                module: "Module 5: Computer Networks",
+                weeks: "Weeks 16–18",
+                lessons: [
+                    "Week 16: OSI & TCP/IP Model, Data Link Layer, Error Detection",
+                    "Week 17: Network Layer – IP Addressing, Routing Algorithms, Subnetting",
+                    "Week 18: Transport & Application Layers – TCP/UDP, HTTP, DNS, SMTP",
+                    "Mock Test #5: CN + OS Combined",
+                ]
+            },
+            {
+                module: "Module 6: Theory of Computation",
+                weeks: "Weeks 19–20",
+                lessons: [
+                    "Week 19: Finite Automata (DFA/NFA), Regular Expressions, Pumping Lemma",
+                    "Week 20: CFG, PDA, Turing Machines, Undecidability, Closure Properties",
+                    "TOC Mock Test #6 + PYQs Practice Session",
+                ]
+            },
+            {
+                module: "Module 7: Compiler Design",
+                weeks: "Weeks 21–22",
+                lessons: [
+                    "Week 21: Compiler Phases, Lexical Analysis, Parsing (LL, LR)",
+                    "Week 22: Syntax-Directed Translation, Code Optimization, Code Generation",
+                    "Mock Test #7 + Assignment",
+                ]
+            },
+            {
+                module: "Module 8: Discrete Mathematics & Aptitude",
+                weeks: "Weeks 23–24",
+                lessons: [
+                    "Week 23: Propositional Logic, Set Theory, Graph Theory, Combinatorics",
+                    "Week 24: Quantitative Aptitude, Verbal Ability, Revision Marathon",
+                    "Final Assessment: 2 Full-Length GATE Pattern Mock Tests",
+                    "Final Session: 'The Last 30 Days GATE Strategy'",
+                ]
+            }
+        ]
     }
 ];
-
