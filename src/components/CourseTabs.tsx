@@ -78,7 +78,7 @@ export default function CourseTabs({ course }: { course: CourseType }) {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
                                 {course.whatYouWillLearn.map((point, index) => (
                                     <div key={index} className="flex items-start gap-3 mt-4">
-                                        <CheckCircle className="w-5 h-5 text-[#EC4899] mt-1" />
+                                        <CheckCircle className="w-5 h-5 text-[#EC4899] mt-1"/>
                                         <p className="text-zinc-400">{renderWithBold(point)}</p>
                                     </div>
                                 ))}
